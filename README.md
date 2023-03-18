@@ -9,7 +9,7 @@
 1. Run
 
 ```php
-composer require nguyendachuy/laravel-menu
+composer require benahmetcelik/laravel-menu
 ```
 
 **_Step 2 & 3 are optional if you are using laravel 5.5_**
