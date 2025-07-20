@@ -9,19 +9,19 @@
   ],
   "authors": [
     {
-      "name": "Nguyen Dac Huy",
-      "email": "huy.cit@gmail.com",
-      "role": "Developer"
-    },
-      {
       "name": "Ahmet CELIK",
       "email": "ben4hmetcelik@gmail.com",
       "role": "Developer"
+    },
+    {
+      "name": "Nguyen Dac Huy",
+      "email": "huy.cit@gmail.com",
+      "role": "Original Developer"
     }
   ],
   "require": {
     "php": ">=7.0",
-    "illuminate/support": "5.* || 6.* || 7.* || 8.* || 9.* || 10.*"
+    "illuminate/support": ">=v5.0.0"
   },
   "autoload": {
     "psr-4": {
