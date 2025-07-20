@@ -63,7 +63,7 @@
                 <div class="form-group">
                     <button type="button" onclick="addItemMenu(this, 'custom')" 
                     class="btn btn-info btn-sm float-right mr-2 mb-2">
-                        Add to Menu
+                        {{ __('Add to Menu') }}
                     </button>
                 </div>
             </form>

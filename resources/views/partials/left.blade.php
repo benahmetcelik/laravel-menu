@@ -1,7 +1,7 @@
 @if(!empty(request()->get('menu')))
 <div id="accordion-left">
     @php
-        // $blogs = \App\Blog::get(['id', 'title'])->map(function($blog){
+        // $blogs = \App\Blog::get(['id', 'title','slug'])->map(function($blog){
         //     return [
         //         'url' => $blog->getLink(),
         //         'icon' => '',
@@ -72,6 +72,6 @@
     @endphp
     @include('nguyendachuy-menu::accordions.default', ['name' => 'Categories', 'urls' => $categories])
 
-    @include('nguyendachuy-menu::accordions.add-link', ['name' => 'Add Link'])
+    @include('nguyendachuy-menu::accordions.add-link', ['name' => __('Add Link')])
 </div>
 @endif

@@ -19,25 +19,25 @@
         <div class="card-body">
             <form method="GET">
                 <div class="form-group">
-                    <label for="label">Enter Label</label>
-                    <input type="text" class="form-control" name="label" placeholder="Label Menu">
+                    <label for="label">{{ __("Enter Label") }}</label>
+                    <input type="text" class="form-control" name="label" placeholder="{{ __('Label Menu') }}">
                 </div>
                 <div class="form-group">
-                    <label for="url">Enter URL</label>
+                    <label for="url">{{ __("Enter URL") }}</label>
                     <input type="text" class="form-control" name="url" placeholder="#">
                 </div>
                 <div class="form-group">
-                    <label for="icon">Enter Icon</label>
-                    <input type="text" class="form-control" id="iconHelp" name="icon" placeholder="Icon">
+                    <label for="icon">{{ __("Enter Icon") }}</label>
+                    <input type="text" class="form-control" id="iconHelp" name="icon" placeholder="{{ __('Icon') }}">
                     <small id="iconHelp" class="form-text text-muted">
-                        Ex: &lt;span class=&quot;oi oi-align-center&quot;&gt;&lt;/span&gt;
+                        {{ __('Ex: &lt;span class=&quot;oi oi-align-center&quot;&gt;&lt;/span&gt;') }}
                     </small>
                 </div>
                 @if(!empty($roles))
                 <div class="form-group">
-                    <label for="role">Select Role</label>
+                    <label for="role">{{ __("Select Role") }}</label>
                     <select class="form-control" name="role">
-                        <option value="0">Select Role</option>
+                        <option value="0">{{ __("Select Role") }}</option>
                         @foreach($roles as $role)
                             <option value="{{ $role->$role_pk }}">
                                 {{ ucfirst($role->$role_title_field) }}
@@ -49,7 +49,7 @@
                 <div class="form-group">
                     <button type="button" onclick="addItemMenu(this, 'default')" 
                     class="btn btn-info btn-sm float-right mr-2 mb-2">
-                        Add to Menu
+                        {{ __("Add to Menu") }}
                     </button>
                 </div>
             </form>
