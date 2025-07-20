@@ -1,6 +1,7 @@
 {
   "name": "benahmetcelik/laravel-menu",
   "description": "drag and drop menu generator for laravel 5... Laravel 12",
+  "license": "MIT",
   "keywords": [
     "Laravel",
     "Menu",
